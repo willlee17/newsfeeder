@@ -12,6 +12,8 @@ export const StoriesContainer = () => {
     getStoryIDs().then(res => {
       setStoryIDs(res)
     }) 
+
+    // return
   }, [])
 
   return (
