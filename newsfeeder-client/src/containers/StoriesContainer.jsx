@@ -9,7 +9,9 @@ export const StoriesContainer = () => {
   const { count } = useInfiniteScroll();
 
   useEffect(() => {
-    getStoryIDs().then(res =>  setStoryIDs(res))
+    getStoryIDs().then(res => {
+      setStoryIDs(res)
+    }) 
   }, [])
 
   return (

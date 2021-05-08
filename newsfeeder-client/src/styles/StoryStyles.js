@@ -37,7 +37,7 @@ export const StoryMeta = styled.div`
   }
 
   > span:not(:first-child):before {
-    content: '•'
+    content: '•';
     margin: 0 7px;
   }
   
@@ -48,5 +48,5 @@ export const StoryMeta = styled.div`
 
 export const StoryMetaElement = styled.span`
   font-weight: bold;
-  color: ${props => props.color};
+  color: ${props => props.color || 'red'};
 `;

@@ -1,6 +1,6 @@
 export const resolvers = {
   Query: {                                                                                            
-    allArticles: (_, __, {dataSources}) => Promise.all(
+    allArticles: (_, __, {dataSources}) => Promise.all(   //parent, args, context, info
       Object.keys(dataSources).map(source => dataSources[source].getAllArticles())
     ).then(res => res.reduce((acc, data) => acc.concat(data), [])), 
     allArticlesBySource: (_, {source}, {dataSources}) => dataSources[source].getAllArticles(), 

@@ -28,9 +28,7 @@ test('renders the application', async () => {
     await waitFor(() => [
       expect(getByText('Hacker News Stories')).toBeTruthy(), 
       expect(getByText('Eating pasta every day social experiment')).toBeTruthy(), 
-      expect(queryByTestId('story-by').textContent).toEqual(
-        'By: William Lee'
-      ), 
+      expect(queryByTestId('story-by').textContent).toEqual('By: William Lee'), 
     ])
   })
 })
