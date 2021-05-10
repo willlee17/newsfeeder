@@ -13,7 +13,7 @@ export const typeDefs = gql`
   type Article {
     id: ID!
     title: String!
-    author: String!
+    author: String
     url: String
     time: String
     source: String
