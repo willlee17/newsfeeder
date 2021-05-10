@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[Queries.hackernewsAPI] fetches an array of all articles from the HackerNews API 1`] = `
+Object {
+  "data": null,
+  "errors": Array [
+    [GraphQLError: Cannot return null for non-nullable field Article.title.],
+  ],
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`[Queries.hackernewsAPI] fetches an array of articles from the HackerNews API 1`] = `
+Object {
+  "data": Object {
+    "articlesBySource": Array [
+      Object {
+        "author": "kristianp",
+        "id": "hn-21168364",
+        "source": "HackerNews",
+        "time": "1570314101",
+        "title": "How to Stress the C# Compiler",
+        "url": "https://blog.hediet.de/post/how-to-stress-the-csharp-compiler",
+      },
+    ],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`[Queries.hackernewsAPI] fetches an article from the HackerNews API 1`] = `
+Object {
+  "data": Object {
+    "articleBySource": Object {
+      "author": "kristianp",
+      "id": "hn-21168364",
+      "source": "HackerNews",
+      "time": "1570314101",
+      "title": "How to Stress the C# Compiler",
+      "url": "https://blog.hediet.de/post/how-to-stress-the-csharp-compiler",
+    },
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
